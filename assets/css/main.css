@@ -212,6 +212,33 @@ input, select, textarea {
 		clear: both;
 	}
 
+
+.portfolio-nav {
+	height: 300px;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 600px;
+}
+
+.portfolio-nav-link {
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.1);
+    transition: 0.2s;
+}
+
+.portfolio-nav-link:hover {
+    background: rgba(255,255,255,0.2);
+}
+.portfolio-subsection {
+    margin-top: 100px;     
+    padding: 20px 0;      
+}
 /* Container */
 
 	.container {
@@ -2664,5 +2691,8 @@ input, select, textarea {
 				#footer .copyright li:first-child {
 					margin-top: 0;
 				}
+
+
+
 
 	}
