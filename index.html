@@ -126,7 +126,7 @@
  <ul class="normal" style="margin-left: 2em;">
   <li><strong>Modular Architecture:</strong> Achieved through independent managers (<code>LevelManager</code>, <code>WaveManager</code>, <code>EnemyManager</code>, <code>PlayerController</code>) and a central <strong>Service Provider</strong> (via <code>GameManager</code>) for cross-cutting concerns like <strong>State Handling</strong> and <strong>Result Handling</strong>, ensuring loose coupling.</li>
   <li><strong>Performance Optimization:</strong> Implements the <strong>Object Pooling</strong> pattern via the <code>EnemyManager</code> for efficient, high-volume enemy spawning and destruction.</li>
-  <li><strong>Data-Driven Design:</strong> All core parameters (health, speed, attack cooldowns, wave configurations) are stored using <strong>Scriptable Objects</strong> or serialized fields, facilitating rapid iteration and designer-friendly balancing.</li>
+  <li><strong>Data-Driven Design:</strong> Enemy, player, level and wave configurations are stored using <strong>Scriptable Objects</strong> or serialized fields, facilitating rapid iteration and designer-friendly balancing.</li>
   <li><strong>Character Systems:</strong> Player and enemy functionalities (Animation, Movement, Attack, Damage, Health, etc.) are managed in separate components that inherit from common base classes, demonstrating the <strong>Composition over Inheritance</strong> principle.</li>
   <li><strong>AI:</strong> Enemies utilize <strong>NavMesh Agents</strong> for pathfinding.</li>
   <li><strong>Combat:</strong> Features automatic target selection (closest enemy for the player) and auto-fire triggers when the target enters attack range, with adjustable attack cooldowns for both player and enemies.</li>
@@ -138,6 +138,8 @@
   <li><strong>UI/UX:</strong> Scalable User Interface developed using the <strong>MVP (Model-View-Presenter)</strong> design pattern.</li>
 </ul>     
 </p>
+  🔗 <a href="https://github.com/mertarzu/Wavefront" class="icon brands fa-github"> View the Wavefront Prototype on GitHub</a>
+	 <br><br>
 
 	<iframe frameborder="0" src="https://itch.io/embed/4047572?linkback=true" width="552" height="167"><a href="https://luluthecatarts.itch.io/wavefront">Wavefront by luluthecatarts</a></iframe>
 </div>
@@ -160,7 +162,8 @@
 		Features visual feedback for moves and tracks player vs AI scores.
         <br>       
     </p>
-     🔗 <a href="https://github.com/mertarzu/MinMaxAI" class="icon brands fa-github">View On GitHub</a>
+     🔗 <a href="https://github.com/mertarzu/MinMaxAI" class="icon brands fa-github"> View the Minimax AI – Unity Tic Tac Toe Demo
+On GitHub</a>
 	 <br><br>
 	<iframe frameborder="0" src="https://itch.io/embed/4047243?linkback=true&amp;link_color=4f6781" width="552" height="167">
 		<a href="https://luluthecatarts.itch.io/tic-tac-toe-cute-edition">Tic Tac Toe – Cute Edition by luluthecatarts</a>
@@ -202,7 +205,8 @@
 
      <br>🔗 
       <a href="https://github.com/mertarzu/DiceSystemDemo" class="icon brands fa-github" target="_blank">
-        <span class="label">GitHub</span> View on GitHub
+        <span class="label">GitHub</span> View the Dice 
+		System Demo on GitHub
       </a>
     </p>
   </header>
