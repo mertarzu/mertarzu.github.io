@@ -73,7 +73,7 @@
 		<header>
 			<h2>About Me</h2>
 			<p align="left">
-				Hello! I’m Arzu Mert, a Game Developer specializing in system design, modular architecture, and gameplay frameworks across Unreal Engine, Unity, and UEFN. 
+				Hello! I’m Arzu Mert, a Game Developer specializing in system design, modular architecture, and gameplay frameworks across Unreal Engine and Unity. 
 				Skilled in C++ and C#, I focus on developing robust gameplay systems, AI logic, and real-time simulations.	
 			</p><p align="left">
 				With a strong background in physics and over a decade of experience in software and simulation development, I bring a structured, analytical mindset to creative problem-solving in game development. 
@@ -85,7 +85,7 @@
 			</p><p align="left">
 				For a detailed overview of my background, please see the resume included in this repository.
 			</p>
-				<br><br><br>
+				
 		
 			</div>
 </section>
@@ -100,80 +100,6 @@
 							</header>
 						
 		<section id="portfolio">
-
-  <div class="portfolio-nav">
-    <a href="#unity-projects" class="portfolio-nav-link">Unity Projects</a>
-    <a href="#unreal-projects" class="portfolio-nav-link">Unreal Projects</a>
-  </div>
-
-  <div id="unity-projects">
-  <h2>Unity Projects</h2>
-
- <div class="container">
-    <header>
-        <h3>Wavefront 3D Tower Defense/Action Hybrid Prototype </h3>
-    </header>
-  <video width="720" controls style="max-width: 100%;">
-        <source src="videos/WavefrontGameplay.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-
-<br><br>
-    <p class="small" align="left" style="font-size:1em; margin-left:2em;">
-      This project is a 3D Unity 6 prototype that merges traditional Tower Defense dynamics with direct player control and a robust modern Unity architecture. 
-	  The design prioritizes performance, scalability, and maintainability, built upon a modular and decoupled system design.
-
- <ul class="normal" style="margin-left: 2em;">
-  <li><strong>Modular Architecture:</strong> Achieved through independent managers (<code>LevelManager</code>, <code>WaveManager</code>, <code>EnemyManager</code>, <code>PlayerController</code>) and a central <strong>Service Provider</strong> (via <code>GameManager</code>) for cross-cutting concerns like <strong>State Handling</strong> and <strong>Result Handling</strong>, ensuring loose coupling.</li>
-  <li><strong>Performance Optimization:</strong> Implements the <strong>Object Pooling</strong> pattern via the <code>EnemyManager</code> for efficient, high-volume enemy spawning and destruction.</li>
-  <li><strong>Data-Driven Design:</strong> Enemy, player, level and wave configurations are stored using <strong>Scriptable Objects</strong> or serialized fields, facilitating rapid iteration and designer-friendly balancing.</li>
-  <li><strong>Character Systems:</strong> Player and enemy functionalities (Animation, Movement, Attack, Damage, Health, etc.) are managed in separate components that inherit from common base classes, demonstrating the <strong>Composition over Inheritance</strong> principle.</li>
-  <li><strong>AI:</strong> Enemies utilize <strong>NavMesh Agents</strong> for pathfinding.</li>
-  <li><strong>Combat:</strong> Features automatic target selection (closest enemy for the player) and auto-fire triggers when the target enters attack range, with adjustable attack cooldowns for both player and enemies.</li>
-  <li><strong>Wave System Logic:</strong> Wave spawn points and progression are managed using a <strong>LinkedList</strong> structure.
-      Wave classes, derived from a <strong>Timer class</strong>, handle timing and decide which enemy spawns and when.</li>
-
-  <li><strong>Enemy Management:</strong> Uses <strong>Object Pooling</strong> for efficient spawn/respawn; <code>EnemyManager</code> handles spawning via the pool and maintains active enemy lists.</li>
-  <li><strong>Animations:</strong> Layered animation controllers and <strong>Blend Trees</strong> are used for smooth character transitions.</li>
-  <li><strong>UI/UX:</strong> Scalable User Interface developed using the <strong>MVP (Model-View-Presenter)</strong> design pattern.</li>
-</ul>     
-</p>
-  🔗 <a href="https://github.com/mertarzu/Wavefront" class="icon brands fa-github"> View the Wavefront Prototype on GitHub</a>
-	 <br><br>
-
-	<iframe frameborder="0" src="https://itch.io/embed/4047572?linkback=true" width="552" height="167"><a href="https://luluthecatarts.itch.io/wavefront">Wavefront by luluthecatarts</a></iframe>
-</div>
-
-</div>
-
-<br>
-<div class="container">
-    <header>
-        <h3>Tic Tac Toe – Minimax AI Demo</h3>
-    </header>
-
-<iframe frameborder="0" src="https://itch.io/embed-upload/15566620?color=333333" allowfullscreen="" width="960" height="620">
-	<a href="https://luluthecatarts.itch.io/tic-tac-toe-cute-edition">Play Tic Tac Toe – Cute Edition on itch.io</a>
-</iframe>
-
-<br><br>
-    <p class="small" align="left" style="font-size:1em; margin-left:2em;">
-       A Tic Tac Toe implementation showcasing a clean Minimax AI, with selectable difficulty levels and a modular system design separating AI logic, game board, and UI. 
-		Features visual feedback for moves and tracks player vs AI scores.
-        <br>       
-    </p>
-     🔗 <a href="https://github.com/mertarzu/MinMaxAI" class="icon brands fa-github"> View the Minimax AI – Unity Tic Tac Toe Demo
-On GitHub</a>
-	 <br><br>
-	<iframe frameborder="0" src="https://itch.io/embed/4047243?linkback=true&amp;link_color=4f6781" width="552" height="167">
-		<a href="https://luluthecatarts.itch.io/tic-tac-toe-cute-edition">Tic Tac Toe – Cute Edition by luluthecatarts</a>
-	</iframe>
-</div>
-
-</div>
-<br>
-<br><br><br><br><br>
-
 
 <div id="unreal-projects">
   <h2>Unreal Projects</h2>
@@ -318,6 +244,49 @@ On GitHub</a>
 	</header>
 </div>
 </div>
+
+
+<div id="unity-projects">
+  <h2>Unity Projects</h2>
+	<br>	
+ <div class="container">
+    <header>
+        <h3>Wavefront 3D Tower Defense/Action Hybrid Prototype </h3>
+    </header>
+  <video width="720" controls style="max-width: 100%;">
+        <source src="videos/WavefrontGameplay.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+<br><br>
+    <p class="small" align="left" style="font-size:1em; margin-left:2em;">
+      This project is a 3D Unity 6 prototype that merges traditional Tower Defense dynamics with direct player control and a robust modern Unity architecture. 
+	  The design prioritizes performance, scalability, and maintainability, built upon a modular and decoupled system design.
+
+ <ul class="normal" style="margin-left: 2em;">
+  <li><strong>Modular Architecture:</strong> Achieved through independent managers (<code>LevelManager</code>, <code>WaveManager</code>, <code>EnemyManager</code>, <code>PlayerController</code>) and a central <strong>Service Provider</strong> (via <code>GameManager</code>) for cross-cutting concerns like <strong>State Handling</strong> and <strong>Result Handling</strong>, ensuring loose coupling.</li>
+  <li><strong>Performance Optimization:</strong> Implements the <strong>Object Pooling</strong> pattern via the <code>EnemyManager</code> for efficient, high-volume enemy spawning and destruction.</li>
+  <li><strong>Data-Driven Design:</strong> Enemy, player, level and wave configurations are stored using <strong>Scriptable Objects</strong> or serialized fields, facilitating rapid iteration and designer-friendly balancing.</li>
+  <li><strong>Character Systems:</strong> Player and enemy functionalities (Animation, Movement, Attack, Damage, Health, etc.) are managed in separate components that inherit from common base classes, demonstrating the <strong>Composition over Inheritance</strong> principle.</li>
+  <li><strong>AI:</strong> Enemies utilize <strong>NavMesh Agents</strong> for pathfinding.</li>
+  <li><strong>Combat:</strong> Features automatic target selection (closest enemy for the player) and auto-fire triggers when the target enters attack range, with adjustable attack cooldowns for both player and enemies.</li>
+  <li><strong>Wave System Logic:</strong> Wave spawn points and progression are managed using a <strong>LinkedList</strong> structure.
+      Wave classes, derived from a <strong>Timer class</strong>, handle timing and decide which enemy spawns and when.</li>
+
+  <li><strong>Enemy Management:</strong> Uses <strong>Object Pooling</strong> for efficient spawn/respawn; <code>EnemyManager</code> handles spawning via the pool and maintains active enemy lists.</li>
+  <li><strong>Animations:</strong> Layered animation controllers and <strong>Blend Trees</strong> are used for smooth character transitions.</li>
+  <li><strong>UI/UX:</strong> Scalable User Interface developed using the <strong>MVP (Model-View-Presenter)</strong> design pattern.</li>
+</ul>     
+</p>
+  🔗 <a href="https://github.com/mertarzu/Wavefront" class="icon brands fa-github"> View the Wavefront Prototype on GitHub</a>
+	 <br><br>
+
+	<iframe frameborder="0" src="https://itch.io/embed/4047572?linkback=true" width="552" height="167"><a href="https://luluthecatarts.itch.io/wavefront">Wavefront by luluthecatarts</a></iframe>
+</div>
+
+</div>
+
+<br>
 
 					</section>
 
