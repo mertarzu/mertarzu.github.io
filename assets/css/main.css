@@ -87,7 +87,7 @@ input, select, textarea {
 	body {
 		background: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
+		font-size: 16px;
 		font-weight: 300;
 		line-height: 1.75em;
 		color: #888;
@@ -106,7 +106,7 @@ input, select, textarea {
 
 	input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
+		font-size: 16px;
 		font-weight: 300;
 		line-height: 1.75em;
 		color: #888;
@@ -157,7 +157,7 @@ input, select, textarea {
 	}
 
 	strong, b {
-		font-weight: 300;
+		font-weight: 600;
 		color: #666;
 	}
 
@@ -213,27 +213,29 @@ input, select, textarea {
 	}
 
 
-.portfolio-nav {
-	height: 300px;
-    display: flex;
-	flex-direction: column;
-	align-items: center;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 600px;
+.portfolio-nav{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  margin: 0 0 3em 0;
+  padding: 0.75em 0;
+  height:auto;
 }
 
-.portfolio-nav-link {
-    font-weight: 600;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 6px;
-    background: rgba(255,255,255,0.1);
-    transition: 0.2s;
+.portfolio-nav-link{
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.08);
+  border: solid 1px rgba(255,255,255,0.10);
+  transition: 0.2s;
 }
 
-.portfolio-nav-link:hover {
-    background: rgba(255,255,255,0.2);
+.portfolio-nav-link:hover{
+  background: rgba(255,255,255,0.14);
 }
 .portfolio-subsection {
     margin-top: 100px;     
@@ -2155,7 +2157,7 @@ input, select, textarea {
 			position: relative;
 			color: #fff;
 			font-weight: 600;
-			font-size: 1em;
+			font-size: 1.6em;
 			line-height: 1em;
 		}
 
@@ -2325,7 +2327,7 @@ input, select, textarea {
 
 			body, input, textarea, select {
 				margin-top: 0;
-				font-size: 17pt;
+				font-size: 16px;
 			}
 
 		/* Header */
@@ -2376,7 +2378,7 @@ input, select, textarea {
 
 			body, input, textarea, select {
 				margin-top: 0;
-				font-size: 16pt;
+				font-size: 15px;
 			}
 
 			.container {
@@ -2453,7 +2455,7 @@ input, select, textarea {
 			}
 
 			body, input, textarea, select {
-				font-size: 16pt;
+				font-size: 15px;
 			}
 
 			header br {
@@ -2644,7 +2646,7 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 14pt;
+				font-size: 14px;
 			}
 
 			h2 {
@@ -2696,3 +2698,110 @@ input, select, textarea {
 
 
 	}
+
+/* --- Custom improvements (Arzu) --- */
+:root{
+  --bg: #000000;
+  --panel: rgba(255,255,255,0.06);
+  --panel-border: rgba(255,255,255,0.10);
+  --text: rgba(255,255,255,0.86);
+  --muted: rgba(255,255,255,0.68);
+  --accent: #E27689;
+}
+
+body{
+  background: var(--bg);
+  color: var(--muted);
+  line-height: 1.65em;
+}
+
+#main > section{
+  background-color: var(--bg);
+  background-image: url("images/overlay.png");
+  color: var(--muted);
+}
+
+#main h1, #main h2, #main h3, #main h4, #main h5, #main h6{
+  color: var(--text);
+}
+
+#main p, #main li{
+  color: var(--muted);
+}
+
+a:hover{
+  color: var(--accent);
+}
+
+/* Project cards */
+.project{
+  text-align:left;
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 16px;
+  padding: 1.25em 1.25em;
+  margin: 0 0 1.75em 0;
+}
+
+.project header{
+  margin: 0 0 0.75em 0;
+}
+
+.project h4{
+  font-size: 1.15em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.project .media{
+  margin: 0.75em 0 1em 0;
+}
+
+.project-text{
+  margin: 0 0 1em 0;
+}
+
+.project-links{
+  margin: 0.75em 0 0 0;
+}
+
+ul.normal{
+  margin-top: 0.5em;
+}
+
+ul.normal li{
+  line-height: 1.55em;
+  margin: 0.15em 0;
+}
+
+/* Improve iframe embed responsiveness */
+iframe{
+  max-width: 100%;
+}
+
+/* Small screens: soften the sidebar width impact */
+@media screen and (max-width: 960px){
+  .project{
+    padding: 1em;
+  }
+}
+
+
+
+/* ===== Custom tweaks ===== */
+
+
+#logo p { font-size: 1em; }
+#header .icons { font-size: 1.6em; }
+#nav ul li a span { font-size: 1.2em; }
+
+/* About card: same visual language as portfolio items, without changing portfolio layout */
+.about-card{
+  text-align: left;
+  padding: 1.2em 1.4em;
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.04);
+  margin: 1.5em auto 0 auto;
+  max-width: 1400px;
+}
