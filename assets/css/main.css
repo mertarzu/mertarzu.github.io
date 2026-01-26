@@ -2805,3 +2805,77 @@ iframe{
   margin: 1.5em auto 0 auto;
   max-width: 1400px;
 }
+/* TABLE LAYOUT */
+table.projects-grid {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 24px; /* gap between cards */
+  table-layout: fixed;  /* prevents weird width jumps */
+}
+
+table.projects-grid td {
+  vertical-align: top;
+  padding: 0;
+}
+
+/* Equal row/cell heights (each row becomes a flex-row) */
+table.projects-grid tr {
+  display: flex;
+  gap: 24px;
+}
+
+table.projects-grid td {
+  flex: 1 1 0;
+  display: flex;          /* allows article to stretch */
+  min-width: 0;           /* prevents overflow pushing layout */
+}
+
+/* Make each card stretch to same height inside the row */
+table.projects-grid .project {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/* Media stays consistent */
+table.projects-grid .media {
+  width: 100%;
+}
+
+table.projects-grid .media img,
+table.projects-grid .media video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optional: keep links at the bottom (nice with equal heights) */
+table.projects-grid .project-links {
+  margin-top: auto;
+}
+
+/* Responsive: stack to 1 column on mobile */
+@media (max-width: 900px) {
+  table.projects-grid tr {
+    flex-direction: column;
+  }
+}
+/* Neutralize any legacy table row/td striping that can hide text */
+table.projects-grid tr,
+table.projects-grid td {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+/* Ensure the project card defines its own readable colors */
+table.projects-grid .project,
+table.projects-grid .project * {
+  color: inherit;
+  opacity: 1; /* prevents accidental fading (esp. placeholders) */
+}
+
+/* If your theme sets links/icons differently, keep them visible */
+table.projects-grid .project a {
+  color: inherit;
+}
